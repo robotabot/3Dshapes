@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>3D SHAPES</h1>
+	</header>
+	<div id="messager">
+		<p></p>
+	</div>
+
+	<div id="slider">
+		<section id="imageElement">
+			<img id="cone" class="visible" src="./shapes/blueCone.png" alt="">
+			<img id="cube" class="hidden" src="./shapes/greenCube.png" alt="">
+			<img id="sphere" class="hidden" src="./shapes/redSphere.png" alt="">
+			<img id="cylinder" class="hidden" src="./shapes/yellowCylinder.png" alt="">
+		</section>
+		<section id="controls">
+			<button data-shape="0">Cone</button>
+			<button data-shape="1">Cube</button>
+			<button data-shape="2">Sphere</button>
+			<button data-shape="3">Cylinder</button>
+		</section>
+	</div>
+
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

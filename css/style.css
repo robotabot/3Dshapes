@@ -1,0 +1,147 @@
+@-webkit-keyframes showShape {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes showShape {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes showShape {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes showShape {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+* {
+	font-family: 'Nunito', sans-serif;
+	margin: 0 0;
+	padding: 0;
+}
+
+body {
+	background-color: darkslategray;
+	color: white;
+	font-size: 5rem;
+}
+
+header {
+	text-align: center;
+	width: 100%;
+}
+
+header h1 {
+	letter-spacing: 5px;
+}
+
+#messager {
+	height: 5rem;
+	width: 100%;
+	text-align: center;
+}
+
+#slider {
+	align-items: center;
+	background-color: white;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	height: 525px;
+	justify-content: center;
+	width: 100%
+}
+
+#imageElement {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+img {
+	position: relative;
+	-webkit-box-ordinal-group: 1;
+	-moz-box-ordinal-group: 1;
+	-ms-flex-order: 1;
+	-webkit-order: 1;
+	order: 1;
+	width: auto;
+}
+
+#controls {
+	-webkit-box-ordinal-group: 2;
+	-moz-box-ordinal-group: 2;
+	-ms-flex-order: 2;
+	-webkit-order: 2;
+	order: 2;
+}
+
+button {
+	background-color: #FF5E00;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	font-size: 2.5rem;
+	height: 72px;
+	margin: 2px auto;
+	width: 300px;
+}
+
+section {
+	margin: 0 10px;
+}
+
+.visible {
+	display: block;
+	-webkit-animation-name: showShape;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-name: showShape;
+	-moz-animation-duration: 0.5s;
+	-o-animation-name: showShape;
+	-o-animation-duration: 0.5s;
+	animation-name: showShape;
+	animation-duration: 0.5s;
+}
+
+.hidden {
+	display: none;
+	left: -2000px;
+	-webkit-animation-name: showShape;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-direction: reverse;
+	-moz-animation-name: showShape;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-direction: reverse;
+	-o-animation-name: showShape;
+	-o-animation-duration: 0.5s;
+	-o-animation-direction: reverse;
+	animation-name: showShape;
+	animation-duration: 0.5s;
+	animation-direction: reverse;
+}
